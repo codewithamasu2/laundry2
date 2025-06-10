@@ -143,11 +143,11 @@ export default function OrderPage() {
 
   const handleOrderClick = (order) => {
     if (order.status === "Completed") {
-      navigate(`/orders/completed/${order.orderId}`);
+      navigate(`/orders/completed`);
     } else if (order.status === "On Progress") {
-      navigate(`/orders/on-going/${order.orderId}`);
+      navigate(`/orders/on-going`);
     } else if (order.status === "Queue") {
-      navigate(`/orders/queue/${order.orderId}`);
+      navigate(`/orders/queue`);
     }
   };
 

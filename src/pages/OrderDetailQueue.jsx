@@ -67,9 +67,11 @@ export default function OrderDetailQueuePage() {
             <span>Cash</span>
           </div>
           <hr className="mb-4" />
-          <div className="w-full bg-[#F59E42] rounded-lg py-3 text-center font-semibold text-white mt-2">
-            Order is queued.
-          </div>
+          <Link to="/orders/on-going">
+            <button className="w-full bg-[#F59E42] rounded-lg py-3 text-center font-semibold text-white mt-2 hover:bg-[#F59E42]/80 hover:cursor-pointer">
+              Process Order
+            </button>
+          </Link>
         </div>
       </main>
       <FooterNav />

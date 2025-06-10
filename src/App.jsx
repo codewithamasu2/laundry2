@@ -17,6 +17,7 @@ import OrderPage from "./pages/Order";
 import OrderDetailCompletedPage from "./pages/OrderDetailCompleted";
 import OrderDetailOngoingPage from "./pages/OrderDetailOnGoing";
 import OrderDetailQueuePage from "./pages/OrderDetailQueue";
+import ProfilePage from "./pages/Profile";
 
 export default function App() {
   return (
@@ -63,17 +64,20 @@ export default function App() {
         {/* Halaman Order  */}
         <Route path="/orders" element={<OrderPage />} />
         <Route
-          path="/orders/completed/:orderId"
+          path="/orders/completed"
           element={<OrderDetailCompletedPage />}
         />
         <Route
-          path="/orders/on-going/:orderId"
+          path="/orders/on-going"
           element={<OrderDetailOngoingPage />}
         />
         <Route
-          path="/orders/queue/:orderId"
+          path="/orders/queue"
           element={<OrderDetailQueuePage />}
         />
+
+        {/* Halaman Profile  */}
+        <Route path="/profile" element={<ProfilePage/>} />
       </Routes>
     </Router>
   );

@@ -72,9 +72,11 @@ export default function OrderDetailOngoingPage() {
             <span>Cash</span>
           </div>
           <hr className="mb-4" />
-          <div className="w-full bg-[#1974AC] rounded-lg py-3 text-center font-semibold text-white mt-2">
-            Order is on progress.
-          </div>
+          <Link to="/orders/completed">
+            <button className="w-full bg-[#1974AC] rounded-lg py-3 text-center font-semibold text-white mt-2">
+              Complete Order
+            </button>
+          </Link>
         </div>
       </main>
       <FooterNav />
